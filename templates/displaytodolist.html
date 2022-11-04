@@ -14,9 +14,18 @@
         </ul>
         <p>YOU CAN DO IT</p>
     </div>
-<form method="post" action="/helloaction">
-    Enter your Name: <input type="text" name="username">
-    <input type="submit">
+<form method="post" action="/submit">
+    Enter New Task: <input type="text" name="task">
+    Enter Task Email: <input type="text" name="email">
+    <select name="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select>
+    <input type="submit" value="Add To Do Item">
+</form>
+<form method="post" action="/clear">
+    <input type="submit" value="Clear">
 </form>
 
 </body>
